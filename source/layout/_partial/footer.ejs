@@ -1,0 +1,25 @@
+<footer id="footer">
+  <% if (theme.sidebar === 'bottom'){ %>
+    <%- partial('_partial/sidebar') %>
+  <% } %>
+
+  <div class="outer">
+
+
+  <div class="outer">
+
+
+    <div id="footer-info" class="inner">
+<style type="text/css">
+   #ds-recent-visitors .ds-avatar {
+    float: left;
+</style>
+<ul class="ds-recent-visitors" data-num-items="80"></ul>
+</div>
+
+<div id="footer-info" class="inner">
+      &copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %>
+<br>
+    </div>
+  </div>
+</footer>
