@@ -1,8 +1,9 @@
 # Landscape-zale
 
-A simple and cool [Hexo](http://hexo.io/) theme based on [Landscape](https://github.com/hexojs/hexo-theme-landscape). Modified some colors and display, add some features .
+A simple and cool [Hexo](http://hexo.io/) theme based on [Landscape](https://github.com/hexojs/hexo-theme-landscape). Modified some colors and display, add some features .It is my Blog's theme.
 
 - [Preview](http://www.zalezone.cn)
+
 
 # Change
 
