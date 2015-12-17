@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>翻墙攻略（二） | Zale Zone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="简介
+近日买了个VPS主机，经推荐买了个便宜的VPS主机，刚刚将所有服务都搭好，自己进行了测试，发现速度挺好，还能在线观看youtube的视频。
+起步
+说道，经过我本人发现，网上的教程大都都没有讲清楚或者讲的太乱，对于我这种新兴用户来说难免有些晕。接下来我就把我个人摸索出来的搭建步骤简单整理一下供大家参考，尽量让大家少走弯路。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="翻墙攻略（二）">
+<meta property="og:url" content="http://zalezone.cn/2015/07/13/翻墙攻略（二）/">
+<meta property="og:site_name" content="Zale Zone">
+<meta property="og:description" content="简介
+近日买了个VPS主机，经推荐买了个便宜的VPS主机，刚刚将所有服务都搭好，自己进行了测试，发现速度挺好，还能在线观看youtube的视频。
+起步
+说道，经过我本人发现，网上的教程大都都没有讲清楚或者讲的太乱，对于我这种新兴用户来说难免有些晕。接下来我就把我个人摸索出来的搭建步骤简单整理一下供大家参考，尽量让大家少走弯路。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="翻墙攻略（二）">
+<meta name="twitter:description" content="简介
+近日买了个VPS主机，经推荐买了个便宜的VPS主机，刚刚将所有服务都搭好，自己进行了测试，发现速度挺好，还能在线观看youtube的视频。
+起步
+说道，经过我本人发现，网上的教程大都都没有讲清楚或者讲的太乱，对于我这种新兴用户来说难免有些晕。接下来我就把我个人摸索出来的搭建步骤简单整理一下供大家参考，尽量让大家少走弯路。">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Zale Zone" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/z.png">
+  
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+
+  <script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5775b426920e4c5be15841fdaf67886f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+
+
+
+
+<style type="text/css">
+@font-face {
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Code Pro'), local('SourceCodePro-Regular'), url(/font/SourceCodePro-Regular.ttf) format('ttf');
+}
+</style>
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Zale Zone</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">不愿冒险的人，通常只能选择别人剩下的东西</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">存档</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://zalezone.cn"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-翻墙攻略（二）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/07/13/翻墙攻略（二）/" class="article-date">
+  <time datetime="2015-07-13T11:09:00.000Z" itemprop="datePublished">7月 13 2015</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/linux/">linux</a>
+  </div>
+
+
+<div class="rdbWrapper" style="float:left;position:relative;bottom:6px;" data-version="1" data-orientation="0" data-show-email="0" data-show-print="0" data-show-send-to-kindle="1" data-show-read-later="0" data-show-read-now="0"></div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      翻墙攻略（二） <span style='color:#999;font:12px "Helvetica Neue",Helvetica,Arial,sans-serif;'><span class="ds-thread-count" data-thread-key="翻墙攻略（二）" data-count-type="comments"></span>
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+
+<!-- toc -->
+
+	<div id="toc" class="toc-article">
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#起步"><span class="toc-number">2.</span> <span class="toc-text">起步</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#机器环境"><span class="toc-number">3.</span> <span class="toc-text">机器环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#搭建步骤"><span class="toc-number">4.</span> <span class="toc-text">搭建步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#VPS主机"><span class="toc-number">4.1.</span> <span class="toc-text">VPS主机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#VPS主机配置"><span class="toc-number">4.2.</span> <span class="toc-text">VPS主机配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#客户端配置"><span class="toc-number">4.3.</span> <span class="toc-text">客户端配置</span></a></li></ol></li></ol>
+	</div>
+
+<h2 id="简介">简介</h2>
+<p>近日买了个VPS主机，经推荐买了个便宜的VPS主机，刚刚将所有服务都搭好，自己进行了测试，发现速度挺好，还能在线观看youtube的视频。</p>
+<h2 id="起步">起步</h2>
+<p>说道，经过我本人发现，网上的教程大都都没有讲清楚或者讲的太乱，对于我这种新兴用户来说难免有些晕。接下来我就把我个人摸索出来的搭建步骤简单整理一下供大家参考，尽量让大家少走弯路。</p>
+<a id="more"></a>
+
+<h2 id="机器环境">机器环境</h2>
+<ul>
+<li>VPS 主机：ubuntu 12.04</li>
+<li>客户端：windows，linux，android手机，ipad</li>
+</ul>
+<h2 id="搭建步骤">搭建步骤</h2>
+<h3 id="VPS主机">VPS主机</h3>
+<ul>
+<li>首先，你得有一台VPS主机，我买的是HOST1Plus网上的主机，这个是国外的，一般只要用作翻墙的话买最便宜的配置的VPS主机一般足够用了，当然你是土豪你随意。另外，如果你有关于主机选择方面的问题的话你也可以联系在线客服，可惜是歪国人，英语不是很好的比如我准备好百度翻译以备不时只需。</li>
+</ul>
+<h3 id="VPS主机配置">VPS主机配置</h3>
+<ul>
+<li>然后，你得配置你的主机，让你的主机具有代理的功能服务。这里我使用的一个软件叫shadowsocks，中文名好像叫“影梭”。关于在ubuntu下的安装也是十分的简单，概括一下就是先安装shadowsocks软件。命令如下：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">apt-<span class="built_in">get</span> install <span class="keyword">python</span>-gevent <span class="keyword">python</span>-pip</div><div class="line">pip install shadowsocks</div></pre></td></tr></table></figure>
+
+<ul>
+<li>接着，对这个软件的配置也很简单，自己找个目录，然后新建一个config.json文件，名字可以自己取。如下：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">{</div><div class="line">  "<span class="attribute">server</span>":<span class="value"><span class="string">"my_server_ip"</span></span>,</div><div class="line">  "<span class="attribute">server_port</span>":<span class="value"><span class="number">8388</span></span>,</div><div class="line">  "<span class="attribute">local_port</span>":<span class="value"><span class="number">1080</span></span>,</div><div class="line">  "<span class="attribute">password</span>":<span class="value"><span class="string">"password"</span></span>,</div><div class="line">  "<span class="attribute">timeout</span>":<span class="value"><span class="number">600</span></span>,</div><div class="line">  "<span class="attribute">method</span>":<span class="value"><span class="string">"table"</span></span></div><div class="line">}</div></pre></td></tr></table></figure>
+
+<ul>
+<li><p>这里面也是非常直观的，一般只要该server和password，其中服务器端的server的地址就是服务器的IP地址。还有method是传输的加密方式，一般也要改。可选择“bf-cfb”,“aes-256-cfb”,“des-cfb”,“rc4″,等等。默认是一种不安全的加密，推荐用“aes-256-cfb”</p>
+</li>
+<li><p>配置完以后就在这个文件的目录下执行，就能启动服务了，当然也可选择后台服务运行</p>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="preprocessor">#在终端中启动服务</span></div><div class="line">ssserver -c /etc/shadowsocks/config.json</div><div class="line"></div><div class="line"><span class="preprocessor">#在后台启动服务，如果在终端中启动服务的话如果退出当前终端的话服务就被杀死了，所以为了保持服务的继续存在，需要将服务在后台运行。</span></div><div class="line">nohup ssserver -c /usr/local/lib/python2<span class="number">.7</span>/dist-packages/shadowsocks/config.json &gt; log &</div></pre></td></tr></table></figure>
+
+<h3 id="客户端配置">客户端配置</h3>
+<ul>
+<li>客户端中的配置看具体情况了，向Ipad或者android都有比较方便的客户端，直接改一下地址就行。</li>
+<li>但是在PC端 的话除了运行客户端软件外，当你在浏览器中浏览网页时还需要配置一下浏览器，这里我用的谷歌浏览器，用了SwitchyOmega这个插件，总体感觉挺好用，就是在新建一个代理，IP地址填本地主机127.0.0.1就行，端口为本地的那个文件的本地端口。</li>
+<li>说道本地文件，这里作为客户端依旧需要服务器的那个文件，新建配置文件，然后在相应的目录执行这个命令就能将客户端与服务器连接起来。</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="input"><span class="prompt">#后台执行命令</span></span></div><div class="line"> nohup sslocal -s IP地址 -p 服务器端口号 -k 密码 &gt; logs &</div></pre></td></tr></table></figure>
+
+<ul>
+<li>另外，加入你比较懒的话，不想每次都开机时都重新手动去执行一次这个命令的话，你可以创建一个shell脚本，然后写入/etc/rc.local 这个文件中去，让它开机自动启动。</li>
+<li>在浏览器插件中设置相应的过滤规则就能方便的翻墙了。其中浏览器设置方式为sock5方式。</li>
+</ul>
+
+
+</div>
+    <footer class="article-footer">
+      <a data-url="http://zalezone.cn/2015/07/13/翻墙攻略（二）/" data-id="0frszdnyftyf1c1i" class="article-share-link">Share</a>
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VPS主机/">VPS主机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/shadowsocks/">shadowsocks</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/代理服务器/">代理服务器</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/翻墙/">翻墙</a></li></ul>
+
+    </footer>
+
+<!-- baidu start -->
+<div style="padding-left:30px;"><div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<div id="gbook" style="padding-left:20px;padding-right:20px;">
+<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="翻墙攻略（二）" data-title="翻墙攻略（二）" data-url="http://zalezone.cn/2015/07/13/翻墙攻略（二）/"></div>
+<!-- 多说评论框 end -->
+</div>
+
+
+
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2015/05/16/Android-NDK入门/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Android NDK 入门</div>
+    </a>
+  
+</nav>
+
+
+
+      
+  </div>
+</article>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+<div class="widget-wrap">
+<h3 class="widget-title">ABOUT ME</h3>
+<ul class="widget about-me">
+
+<li><img class="author" title="About me" src="/image/touxiang2.jpg" /></li>
+
+
+<li>name->    zale</li>
+
+<li>Job->     student</li>
+
+<li>Email->   1433317488@qq.com</li>
+
+
+</ul>
+</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/android/">android</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/java/">java</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/web前端/">web前端</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/人生轨迹/">人生轨迹</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/数据库/">数据库</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/设计模式/">设计模式</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/07/13/翻墙攻略（二）/">翻墙攻略（二）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/05/16/Android-NDK入门/">Android NDK 入门</a>
+          </li>
+        
+          <li>
+            <a href="/2015/05/13/hibernate高级特性/">Hibernate高级特性</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/26/hibernate/">hibernate入门</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/22/Android自定义ActionBar/">Android自定义ActionBar</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/15/java垃圾回收机制/">java垃圾回收机制</a>
+          </li>
+        
+          <li>
+            <a href="/2015/02/15/适配器模式/">适配器模式</a>
+          </li>
+        
+          <li>
+            <a href="/2015/01/01/newStart/">再见2014，你好2015</a>
+          </li>
+        
+          <li>
+            <a href="/2014/12/06/Angularjs/">AngularJS</a>
+          </li>
+        
+          <li>
+            <a href="/2014/11/16/单例模式/">单例模式</a>
+          </li>
+        
+          <li>
+            <a href="/2014/11/12/观察者模式/">观察者模式</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/26/java自制线程池/">java自制线程池</a>
+          </li>
+        
+          <li>
+            <a href="/2014/10/22/Android编译执行C代码/">android 编译调用C代码</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/29/不要怪老天不公平/">不要怪老天不公平</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/25/Android侧拉菜单SlidingMenu的配置和使用/">Android侧拉菜单SlidingMenu的配置和使用</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/17/NIO精粹/">java NIO详解</a>
+          </li>
+        
+          <li>
+            <a href="/2014/09/08/linux翻墙攻略/">linux翻墙攻略</a>
+          </li>
+        
+          <li>
+            <a href="/2014/08/24/暑假之末/">暑假之末</a>
+          </li>
+        
+          <li>
+            <a href="/2014/08/13/git使用小记/">Git使用小记</a>
+          </li>
+        
+          <li>
+            <a href="/2014/08/13/正则表达式基础/">正则表达式基础</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+    <div class="widget-wrap">
+    <h3 class="widget-title">Links</h3>
+    <div class="widget">
+      <ul>
+        <ul>
+<li><a href="http://blog.csdn.net/u012457196" target="_blank" title="csdn">CSDN</a></li>
+<li><a href="http://user.qzone.qq.com/1433317488" target="_blank" title="qqzone">qq空间</a></li>
+	  	</ul>
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ActionBarSherlock/" style="font-size: 10.00px;">ActionBarSherlock</a><a href="/tags/AngularJS/" style="font-size: 10.00px;">AngularJS</a><a href="/tags/C/" style="font-size: 10.00px;">C</a><a href="/tags/DIY/" style="font-size: 10.00px;">DIY</a><a href="/tags/GFW/" style="font-size: 10.00px;">GFW</a><a href="/tags/Hibernate/" style="font-size: 10.00px;">Hibernate</a><a href="/tags/JDK/" style="font-size: 10.00px;">JDK</a><a href="/tags/NDK/" style="font-size: 10.00px;">NDK</a><a href="/tags/NIO/" style="font-size: 10.00px;">NIO</a><a href="/tags/SlidingMenu/" style="font-size: 10.00px;">SlidingMenu</a><a href="/tags/UI/" style="font-size: 13.33px;">UI</a><a href="/tags/VPS主机/" style="font-size: 10.00px;">VPS主机</a><a href="/tags/actionBar/" style="font-size: 10.00px;">actionBar</a><a href="/tags/android/" style="font-size: 16.67px;">android</a><a href="/tags/assets/" style="font-size: 10.00px;">assets</a><a href="/tags/git/" style="font-size: 10.00px;">git</a><a href="/tags/goagent/" style="font-size: 10.00px;">goagent</a><a href="/tags/hibernate/" style="font-size: 10.00px;">hibernate</a><a href="/tags/java/" style="font-size: 20.00px;">java</a><a href="/tags/javascript/" style="font-size: 10.00px;">javascript</a><a href="/tags/life/" style="font-size: 10.00px;">life</a><a href="/tags/linux/" style="font-size: 13.33px;">linux</a><a href="/tags/shadowsocks/" style="font-size: 10.00px;">shadowsocks</a><a href="/tags/web前端/" style="font-size: 10.00px;">web前端</a><a href="/tags/不公平/" style="font-size: 10.00px;">不公平</a><a href="/tags/交叉编译/" style="font-size: 10.00px;">交叉编译</a><a href="/tags/代理服务器/" style="font-size: 10.00px;">代理服务器</a><a href="/tags/代码管理/" style="font-size: 10.00px;">代码管理</a><a href="/tags/侧拉菜单/" style="font-size: 10.00px;">侧拉菜单</a><a href="/tags/内存管理/" style="font-size: 10.00px;">内存管理</a><a href="/tags/创建类模式/" style="font-size: 10.00px;">创建类模式</a><a href="/tags/单例模式/" style="font-size: 10.00px;">单例模式</a><a href="/tags/垃圾回收/" style="font-size: 10.00px;">垃圾回收</a><a href="/tags/心态/" style="font-size: 10.00px;">心态</a><a href="/tags/性能/" style="font-size: 10.00px;">性能</a><a href="/tags/数据库/" style="font-size: 10.00px;">数据库</a><a href="/tags/数据持久化/" style="font-size: 10.00px;">数据持久化</a><a href="/tags/正则表达式/" style="font-size: 10.00px;">正则表达式</a><a href="/tags/线程池/" style="font-size: 10.00px;">线程池</a><a href="/tags/结构性模式/" style="font-size: 10.00px;">结构性模式</a>
+      
+    </div>
+  </div>
+
+
+
+
+  
+</aside>
+        
+      </div>
+      
+<footer id="footer">
+  
+
+  <div class="outer">
+
+
+  <div class="outer">
+
+    <div id="footer-info" class="inner">
+<style type="text/css">
+   #ds-recent-visitors .ds-avatar {
+    float: left;
+</style>
+<ul class="ds-recent-visitors" data-num-items="0"></ul>
+</div>
+
+
+
+<div id="footer-info" class="inner">
+      &copy; 2015 zale
+<br>
+
+
+    </div>
+  </div>
+
+
+
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">存档</a>
+  
+</nav>
+    <script src="/js/jquery-2.1.1.min.js"></script>
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"zalezone"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+<!-- 多说公共JS代码 end -->
+
+<div id="scroll2top" style="position:fixed;bottom:150px;right:50px;cursor: pointer;Z-index:9999">
+<a title="返回顶部" href="#"><img src="/scroll2top/scrollup.png"/></a>
+</div>
+<script src="/scroll2top/scroll2top.js"></script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script type="text/javascript">(function() {var s = document.getElementsByTagName("script")[0],rdb = document.createElement("script"); rdb.type = "text/javascript"; rdb.async = true; rdb.src = document.location.protocol + "//www.readability.com/embed.js"; s.parentNode.insertBefore(rdb, s); })();</script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+
+
+  </div>
+</body>
+</html>
